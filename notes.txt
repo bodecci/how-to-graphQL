@@ -33,7 +33,7 @@ Type Post {
 
 Because REST APIs have fixed data structures, they expose several endpoints, instead in Graph, you only expose 1 data point.
 
-Realtime updates with subscriptions
+event based realtime updates with subscriptions
 
 
 GraphQL Schema
@@ -53,3 +53,37 @@ Root Types:
 	type Subscription {
 		… 
 		}
+
+Architectural Use Cases
+
+	1. GraphQL server with a connected database
+	2. GraphQL server to integrate existing systems
+	3. A hybrid approach with a connected database and integration of existing system
+
+
+GraphQL server with a connected database
+	- often used for Greenfield projects
+	-uses a single 
+
+
+Resolver Functions
+
+- GraphQL queries/mutations consist of a set of fields
+- GraphQL server has one resolver function per field
+- The purpose of each resolver function is to retrieve the data for its corresponding field
+
+
+From Imperative to declarative data fetching
+
+Imperative data fetching
+When fetching data in REST APIs, you
+	1. Construct and send HTTP request (e.g with fetch in javascript)
+	2. Receive and parse the serve response
+	3. Store data locally
+	4. Data displayed in UI
+
+Declarative data fetching
+    	1. Describe data requirements
+    2. Display information in the UI
+
+
