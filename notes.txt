@@ -1,0 +1,17 @@
+GraphQL
+
+A more efficient alternative to REST API: 
+- Increased mobile usage create need for efficient data loading
+- Variety of different frontend frameworks and platforms
+- Fast development speed & expectation of rapid feature development
+
+GraphQL was developed to cope with the need for more flexibility and efficiency in client-server communication
+	-No need to adjust API when product requirements and design change
+	-After feedback cycles and product iterations
+REST: structure endpoints according to the clients data needs
+
+GraphQL:
+Allows fine grained info about what data is read by clients
+Enables evolving API and deprecation unneeded API features
+Great opportunities for instrumenting and performance monitoring
+GRaphQL uses a strong type systems to define capabilities of an API
