@@ -14,4 +14,42 @@ GraphQL:
 Allows fine grained info about what data is read by clients
 Enables evolving API and deprecation unneeded API features
 Great opportunities for instrumenting and performance monitoring
-GRaphQL uses a strong type systems to define capabilities of an API
+GraphQL uses a strong type systems to define capabilities of an API
+
+The Schema Definition Language (SDL)
+
+type Person {				
+	name: String!
+	age: Int!
+	posts: [Post!]!
+    }
+
+The exclamation mark means the type is required
+
+Type Post {
+	title: String!
+	author: Person!
+  }
+
+Because REST APIs have fixed data structures, they expose several endpoints, instead in Graph, you only expose 1 data point.
+
+Realtime updates with subscriptions
+
+
+GraphQL Schema
+	-defines capabilities of the API specifying how a client can fetch and update data
+	-represents contract between client and server
+	-collection of GraphQL type with special too types
+
+Root Types:
+ 	type Query {
+		… 
+		}
+
+	type Mutation {
+		… 
+		}
+
+	type Subscription {
+		… 
+		}
